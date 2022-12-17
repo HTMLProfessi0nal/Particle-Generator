@@ -1,7 +1,7 @@
 import { tsParticles } from "https://cdn.jsdelivr.net/npm/tsparticles-engine/+esm";
 import { loadFull } from "https://cdn.jsdelivr.net/npm/tsparticles/+esm";
 
-async function loadParticles(options) {
+export async function loadParticles(options) {
   await loadFull(tsParticles);
 
   await tsParticles.load(options);
